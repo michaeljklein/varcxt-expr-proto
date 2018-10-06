@@ -1,0 +1,61 @@
+-- This file has been generated from package.yaml by hpack version 0.28.2.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 5163b44a0e4d05591c6eae7bf56fc12b91a203cc7b362f03fd4e93e53095c402
+
+name:           varcxt-expr-proto
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/michaeljklein/varcxt-expr-proto#readme>
+homepage:       https://github.com/michaeljklein/varcxt-expr-proto#readme
+bug-reports:    https://github.com/michaeljklein/varcxt-expr-proto/issues
+author:         Michael J. Klein
+maintainer:     lambdamichael@gmail.com
+copyright:      2018 Michael J. Klein
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+cabal-version:  >= 1.10
+extra-source-files:
+    ChangeLog.md
+    README.md
+
+source-repository head
+  type: git
+  location: https://github.com/michaeljklein/varcxt-expr-proto
+
+library
+  exposed-modules:
+      Lib
+  other-modules:
+      Paths_varcxt_expr_proto
+  hs-source-dirs:
+      src
+  build-depends:
+      base >=4.7 && <5
+    , comonad
+    , free
+    , mtl
+    , pointed
+    , profunctors
+    , transformers
+  default-language: Haskell2010
+
+test-suite varcxt-expr-proto-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_varcxt_expr_proto
+  hs-source-dirs:
+      test
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.7 && <5
+    , comonad
+    , free
+    , mtl
+    , pointed
+    , profunctors
+    , transformers
+    , varcxt-expr-proto
+  default-language: Haskell2010
