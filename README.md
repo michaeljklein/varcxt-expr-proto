@@ -58,3 +58,8 @@ type family IsCxtType (a :: *) :: Maybe Bool where
   CxtType _ = 'Nothing
 ```
 
+
+# Docs
+
+Haddock generated documentation may be found [here](https://michaeljklein.github.io/varcxt-expr-proto/)
+
